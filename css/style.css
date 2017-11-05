@@ -1,0 +1,194 @@
+html, body {
+    height:100%;
+    margin:0;
+}
+body{
+  background-image: url("https://res.cloudinary.com/dwlg4h25p/image/upload/c_scale,h_1080,w_1920/v1499369259/aleks-dahlberg-274646_adpdpw.jpg");
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  /* This is used so that flexbox is displayed correctly in all browsers*/
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-align-items:center;
+  -webkit-justify-content:center;
+  
+  height: 100%;
+  color:white;
+  font-family: 'Roboto', sans-serif;
+}
+.heading{
+  color:white;
+  font-family: 'Source Code Pro', cursive;;
+  font-size:7em;
+}
+.shortBio{
+  text-align: center;
+  justify-content:center;
+  color:white;
+  font-family: 'Roboto', sans-serif;
+  font-size:1.3em;
+}
+nav-bar{
+  height: 100%;
+  width: 60px;
+  float:left;
+  
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-align-items:center;
+  -webkit-justify-content:center;
+  
+  border-right: solid 2px white
+}
+.logo{
+  color:white;
+  font-family: 'Oswald', sans-serif;
+  font-size:2.2em;
+}
+i{
+  -webkit-filter: invert(100%);
+  font-size: 32px;
+  opacity: 1;
+  transition:0.3s;
+  display: inline-block;
+  position: relative;
+  
+}
+.navGap{
+  height:34%
+}
+.navGap:nth-child(7){
+  height:29%
+}
+
+
+
+
+
+i:hover  {
+  opacity: 0.1;
+  cursor: pointer;
+}
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.heartbeat:hover {
+	-webkit-animation: heartbeat 2.5s ease-in-out both;
+	        animation: heartbeat 2.5s ease-in-out both;
+}
+
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
