@@ -1,0 +1,45 @@
+h1 {
+    margin-left: 10%;
+}
+
+h2 {
+    font-family: 'Source Code Pro', cursive;
+}
+
+.mdl-card {
+    width: 512px;
+}
+
+.mdl-card__menu {
+    color: #fff;
+}
+
+.TTCup > .mdl-card__title {
+    color: #ffffff;
+    height: 176px;
+    background: url('https://res.cloudinary.com/dwlg4h25p/image/upload/c_scale,q_64,w_512/v1510261342/TTCthumb_zjgub4.jpg');
+}
+
+.Snake > .mdl-card__title {
+    color: #ffffff;
+    height: 176px;
+    background: url('https://res.cloudinary.com/dwlg4h25p/image/upload/c_scale,q_64,w_512/v1510261342/TTCthumb_zjgub4.jpg');
+}
+
+.projectsList {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row; /* works with row or column */
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.mdl-card {
+    margin: 3% 6% 0 6%;
+
+}
+
+

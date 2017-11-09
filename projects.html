@@ -6,17 +6,28 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109450808-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-109450808-1');
     </script>
 
     <title>Portfolio NP.</title>
+    <!--material design stuff-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
     <link rel='stylesheet prefetch' href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
-    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Roboto:100|Source+Code+Pro:200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Roboto:500|Source+Code+Pro:200" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projects.css">
 </head>
 
 <body>
@@ -36,30 +47,41 @@
     </div>
 
 </nav-bar>
-<main>
-    <h1 class="text-focus-in">My projects</h1>
-    <div class="shortBio">
-        <br>
-        <p>I have done many smaller projects in the past but currently, what I can show is my
-            dissertation. </p>
-        <p>Essentialy what I built is a website to manage a Table Tennis Cup, it helps to keep track of
-            everything including match dates, scores, players contact info, and players handicaps <br>
-            It can be used to calculate the final scores of matches as the player handicaps have to be taken into
-            account and the calculations are not trivial.
-        </p>
-        <p>The tools I used to build it are Vue.js for the front end, Express.js (Node.js) for the backend and
-            finally MySQL for the database.
-            If you would like to view the site you can find it here:
-        </p>
+
+<br>
+<h1 class="text-focus-in">My projects:</h1>
+
+<div class="projectsList">
+    <div class="TTCup mdl-card mdl-shadow--7dp">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Table Tennis Cup manager</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            This was part of my dissertation work in 2017. It is a website to help with
+            the organisation and management of a table tennis cup.
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="TTCup.html">
+                More details
+            </a>
+        </div>
     </div>
-    <form method="get" action="http://178.62.9.140/Index.html">
 
-        <button class="button">Project Link</button>
-    </form>
-
-    <div>
-
+    <div class="Snake mdl-card mdl-shadow--7dp">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Snake Game</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            I recreated the classic Snake game in my spare time.
+            The project was written from scratch only using JavaScript.
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                More details
+            </a>
+        </div>
     </div>
-</main>
+</div>
+
 </body>
 </html>
