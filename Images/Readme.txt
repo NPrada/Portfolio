@@ -1,0 +1,1 @@
+The rest of the pictures are hosted on cloudinary.com
