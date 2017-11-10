@@ -39,10 +39,15 @@ button {
     border: solid white 2px;
     text-decoration: none;
     background-color: Transparent;
+    border-radius: 3px;
+    transition: .4s;
 }
 
 button:hover {
     cursor: pointer;
+    background: rgba(255,255,255,0.7);
+    color: rgba(51,54,68,0.7);
+    border: solid rgba(255,255,255,0.7) 2px;
     /* background: #ffffff;
      text-decoration: none; */
 }
