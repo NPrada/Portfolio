@@ -95,6 +95,9 @@ h2 {
     h1 {
         font-size: 40px;
     }
+    main {
+        overflow-y: scroll;
+    }
     .cardTitle{
         height: 120px;
     }
