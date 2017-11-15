@@ -15,7 +15,7 @@ $(document).ready(function () {
             $('.nav-bar').show();
             $('.mobileNav').hide();
         } else {
-            //$('main').cssP({"height": "80%"});
+            //$('main').css({"height": "80%"});
             $('.mobileNav').show();
             $('.nav-bar').hide();
         }
@@ -32,6 +32,7 @@ $(document).ready(function () {
             $('main').hide();
         }else{
             $('.sideMenu').css({right: '-250px'});
+
             $('main').show();
         }
     });
