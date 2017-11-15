@@ -4,13 +4,6 @@ $(document).ready(function () {
     // This will fire when document is ready:
     $(window).resize(function () {
         // This will fire each time the window is resized:
-
-        var $this = $("h1");
-        if (parseInt($this.css("fontSize")) < 51) {
-
-            $this.css({"font-size": "50px" });
-        }
-
         if ($(window).width() >= 1024) {
             $('.nav-bar').show();
             $('.mobileNav').hide();
@@ -25,6 +18,8 @@ $(document).ready(function () {
                 "width": "512px"
             });
 
+            $title.css({"font-size":"8vw"});
+
         } else {
             $('.mobileNav').show();
             $('.nav-bar').hide();
@@ -36,6 +31,7 @@ $(document).ready(function () {
                 "margin-top": "30px",
                 "width": "280px"
             });
+            $title.css({"font-size": "50px" });
         }
     }).resize(); // This will simulate a resize to trigger the initial run.
 
