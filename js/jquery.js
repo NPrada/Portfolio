@@ -14,10 +14,28 @@ $(document).ready(function () {
         if ($(window).width() >= 1024) {
             $('.nav-bar').show();
             $('.mobileNav').hide();
+
+            $('.projectsList').css({
+                "-webkit-flex-direction": 'row',
+                "flex-direction": "row"
+            });
+
+            $('.projectCard').css({
+                "margin-top": "0",
+                "width": "512px"
+            });
+
         } else {
-            //$('main').css({"height": "80%"});
             $('.mobileNav').show();
             $('.nav-bar').hide();
+            $('.projectsList').css({
+                "-webkit-flex-direction": 'column',
+                "flex-direction": "column"
+            });
+            $('.projectCard').css({
+                "margin-top": "30px",
+                "width": "280px"
+            });
         }
     }).resize(); // This will simulate a resize to trigger the initial run.
 
