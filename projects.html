@@ -1,26 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109450808-1"></script>
     <script src="js/G_analytics.js"></script>
-    <!--Webpage icon-->
-    <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico" />
-    <title>Portfolio NP.</title>
-    <!--material design stuff-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!--Jquery-->
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+            crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <!--Webpage tab icon/tame-->
+    <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico"/>
+    <title>Niccolo Prada Portfolio</title>
     <!--Icons, fonts and CSS-->
     <link rel='stylesheet prefetch' href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
-    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Roboto:500|Source+Code+Pro:200" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <!--<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto|Source+Code+Pro" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Roboto:100|Source+Code+Pro:200" rel="stylesheet">
+    <link href="css/hamburgers.css" rel="stylesheet"> <!--used for the hamburger menu-->
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/style.css">   <!-- the order in which these next two are put is important bc the h1-->
     <link rel="stylesheet" href="css/projects.css">
+
 </head>
 
 <body>
-<nav-bar>
+<!--this is the stuff for the mobile view-->
+<div class="mobileNav">
+    <a style="text-decoration: none" href="http://www.niccoloprada.com">
+        <div class="logo">NP.</div>
+    </a>
+    <div class="right">
+        <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </div>
+</div>
+
+<div id="mobileSidenav" class="sideMenu">
+    <br>
+    <a href="aboutme.html">About Me</a><hr>
+    <a href="projects.html">Projects</a><hr>
+    <a href="downloadCV.html">Resumé</a><hr>
+    <a href="emailme.html">Contact Me</a>
+</div>
+
+<div class="nav-bar">
     <a style="text-decoration: none" href="http://www.niccoloprada.com"><div class="logo">NP.</div></a>
     <div class="navGap"></div>
     <div><a href="aboutme.html" style="color: black"><i class="ion-chatbubble-working"></i></a></div>
@@ -35,42 +64,46 @@
     <div><a href="https://www.facebook.com/niccolo.prada" style="color: black"><i class="ion-social-facebook"></i></a>
     </div>
 
-</nav-bar>
-
-<br>
-<h1 class="text-focus-in">My projects:</h1>
-
-<div class="projectsList">
-    <div class="TTCup mdl-card mdl-shadow--7dp">
-        <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">Table Tennis Cup manager</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-            This was part of my dissertation work in 2017. It is a website to help with
-            the organisation and management of a table tennis cup.
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="Projects/TTCup.html">
-                More details
-            </a>
-        </div>
-    </div>
-
-    <div class="Snake mdl-card mdl-shadow--7dp">
-        <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">Snake Game</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-            I recreated the classic Snake game in my spare time.
-            The project was written from scratch only using JavaScript.
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="Projects/SnakeGame.html">
-                More details
-            </a>
-        </div>
-    </div>
 </div>
+<main style="display: block">
+    <br>
+    <h1 class="text-focus-in">My projects:</h1>
+
+    <div class="projectsList">
+        <div class="projectCard">
+            <div class="cardTitle TTCup">
+                <h2>Table Tennis Cup Manager</h2>
+            </div>
+            <div class="cardDescription">
+                <p>
+                    This was part of my dissertation work in 2017. It is a website to help with the organisation and management of a table tennis cup.
+                </p>
+            </div>
+            <hr class="dark">
+            <div>
+                <button class="mdl-button">More Details</button>
+            </div>
+        </div>
+
+        <div class="projectCard">
+            <div class="cardTitle Snake">
+                <h2>Snake Game </h2>
+            </div>
+            <div class="cardDescription">
+                <p>
+                    I recreated the classic Snake game in my spare time. The project was written from scratch only using JavaScript.
+                </p>
+            </div>
+            <hr class="dark">
+            <div>
+                <button class="mdl-button">More Details</button>
+            </div>
+        </div>
+
+
+    </div>
+</main>
+
 
 </body>
 </html>
