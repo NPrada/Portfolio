@@ -4,6 +4,9 @@ $(document).ready(function () {
     // This will fire when document is ready:
     $(window).resize(function () {
         // This will fire each time the window is resized:
+
+        var $title = $("h1");
+
         if ($(window).width() >= 1024) {
             $('.nav-bar').show();
             $('.mobileNav').hide();
