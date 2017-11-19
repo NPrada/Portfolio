@@ -66,6 +66,12 @@ h1 {
 
 /*this is for the text*/
 .shortBio {
+
+    margin-top:10% ;
+    flex: 1 1 auto;
+    overflow-y: auto;
+    min-height: 0px;
+
     text-align: center;
     justify-content: center;
     color: white;

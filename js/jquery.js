@@ -20,7 +20,9 @@ $(document).ready(function () {
                 "margin-top": "0",
                 "width": "512px"
             });
-
+            $('.shortBio').css({
+                "margin-top": "10%"
+            });
             $title.css({"font-size":"8vw"});
 
         } else {
@@ -35,6 +37,10 @@ $(document).ready(function () {
                 "width": "280px"
             });
             $title.css({"font-size": "50px" });
+
+            $('.shortBio').css({
+                "margin-top": "2px"
+            });
         }
     }).resize(); // This will simulate a resize to trigger the initial run.
 
