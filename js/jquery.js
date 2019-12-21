@@ -33,7 +33,6 @@ $(document).ready(function () {
                 "flex-direction": "column"
             });
             $('.projectCard').css({
-                "margin-top": "30px",
                 "width": "280px"
             });
             $title.css({"font-size": "50px" });
